@@ -1,0 +1,48 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.789);
+  z-index: -100;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.modal__innr,
+.cart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 700px;
+  overflow-y: scroll;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 1px 2px 5px 5px rgb(79, 78, 78);
+  z-index: 200;
+}
+
+.cart h2 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.removBTn {
+  position: absolute;
+  top: 50px;
+  right: 350px;
+  box-shadow: 1px 2px 15px 5px rgb(86, 85, 85);
+}
+
+.openModal {
+  z-index: 100;
+  opacity: 1;
+}
+
+.removModal {
+  z-index: -100;
+  opacity: 0;
+}
